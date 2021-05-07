@@ -15,6 +15,7 @@ const initState = {
     promo: [],
     licensed: false,
   },
+  spRequests: [],
   clientHome: { time: ["06:00AM-45", "06:00AM-15"] },
 };
 const rootReducer = (state = initState, action) => {
@@ -52,6 +53,11 @@ const rootReducer = (state = initState, action) => {
       return {
         ...state,
         spHome: { ...state.spHome, licensed: action.payload },
+      };
+    case "SP_REQUESTS":
+      return {
+        ...state,
+        spRequests: [...state.spRequests, , action.payload],
       };
     default:
       return state;

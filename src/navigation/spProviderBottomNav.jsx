@@ -1,15 +1,12 @@
 import React from "react";
 import {} from "react-native";
-import {
-  Profile,
-  Feedback,
-  Request,
-  Home,
-} from "./../components/serviceProviderSection/spLanding";
 import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
+import Home from "./../components/serviceProviderSection/home";
+import Requests from "./../components/serviceProviderSection/requests";
+import Profile from "./../components/serviceProviderSection/profile";
 const Tab = createMaterialBottomTabNavigator();
 
 const SpProviderBottomNav = () => {
@@ -39,8 +36,8 @@ const SpProviderBottomNav = () => {
           }}
         /> */}
         <Tab.Screen
-          name="Request"
-          component={Request}
+          name="Requests"
+          component={Requests}
           options={{
             tabBarIcon: ({ color }) => (
               <MaterialIcons
@@ -51,7 +48,7 @@ const SpProviderBottomNav = () => {
             ),
           }}
         />
-        <Tab.Screen
+        {/* <Tab.Screen
           name="Profile"
           component={Profile}
           options={{
@@ -59,7 +56,7 @@ const SpProviderBottomNav = () => {
               <FontAwesome name="user" size={24} color={color} />
             ),
           }}
-        />
+        /> */}
       </Tab.Navigator>
     </NavigationContainer>
   );

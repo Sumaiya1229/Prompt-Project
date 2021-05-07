@@ -15,7 +15,7 @@ import _Button from "./../_common/_components/_button";
 import * as DocumentPicker from "expo-document-picker";
 import { connect } from "react-redux";
 import { promo, licensed } from "./../../redux/action/rootAction";
-const HomeMarkup = (props) => {
+const Home = (props) => {
   const [data, setData] = useState({
     toggleModal: false,
     toggleTimeAlloc: false,
@@ -273,4 +273,4 @@ const mapDispatchToProps = (dispatch) => {
     licenseType: (payload) => dispatch(licensed(payload)),
   };
 };
-export default connect(mapStateToProps, mapDispatchToProps)(HomeMarkup);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

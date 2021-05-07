@@ -32,6 +32,7 @@ const SpTimeAllocation = (props) => {
   });
   const mount = useRef();
   useEffect(() => {
+    console.log(props.data.time);
     if (!mount.current) {
       console.log("updatedss");
       mount.current = true;

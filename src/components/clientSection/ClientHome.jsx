@@ -12,7 +12,6 @@ import {
 import { MaterialIcons } from "@expo/vector-icons";
 import { Picker } from "@react-native-picker/picker";
 import SpTimeAllocation from "./../serviceProviderSection/spTimeAllocation";
-import ClientTimeAlloc from "./clientTimeAlloc";
 import ClientServiceSelect from "./clientServiceSelect";
 class ClientHome extends Component {
   state = {
@@ -99,7 +98,6 @@ class ClientHome extends Component {
             >
               <MaterialIcons name="cancel" size={35} color="red" />
             </TouchableOpacity>
-            <ClientTimeAlloc />
           </Modal>
         </View>
         <TouchableOpacity

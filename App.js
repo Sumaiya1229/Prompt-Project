@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, StatusBar } from "react-native";
-import RootNavigator from './src/navigation/RootNavigator';
+import RootNavigator from './src/navigation/rootNavigator';
 import { NavigationContainer } from "@react-navigation/native";
 import AccountTypePrompt from './src/components/userAuth/userAuthCommon/accountTypePrompt';
 import SpProviderBottomNav from './src/navigation/spProviderBottomNav';
